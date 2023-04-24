@@ -19,14 +19,15 @@ const TaskForm = ({editTaskId}: Props) => {
     } = useContext(TodoContext)
 
     useEffect(() => {
-        if (editTaskId) {
-            const taskData = activeTasks.find(
-                task => task.id === editTaskId
-            )
-            title.set(taskData?.title || '')
-            description.set(taskData?.description || '')
-        }
-    }, [activeTasks, description, editTaskId, title])
+            if (editTaskId) {
+                const taskData = activeTasks.find(
+                    task => task.id === editTaskId
+                )
+                title.set(taskData?.title || '')
+                description.set(taskData?.description || '')
+            }
+        },
+        [activeTasks])
 
     useEffect(() => {
         if (showMessage.message) {
