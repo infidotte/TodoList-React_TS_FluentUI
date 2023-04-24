@@ -1,0 +1,11 @@
+{
+  "header": "Todo List",
+  "pivots": {
+    "tasksTab": "Tasks",
+    "tasksFormTab": "Task Form",
+    "completed": "Completed"
+  },
+  "deleteConfirm": "Are you sure?",
+  "addTaskBtn": "Add",
+  "updateTaskBtn": "Update"
+}
